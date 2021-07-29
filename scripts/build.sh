@@ -16,11 +16,21 @@ docker run \
   -v $(pwd):/app \
   -u $(id -u):$(id -g) \
   clang:hash-wasm \
-  make -f /app/scripts/Makefile-clang --silent --always-make --output-sync=target -j8 all
+  make -f /app/scripts/Makefile-clang \
+       --silent \
+       --always-make \
+       --output-sync=target \
+       -j8 all
 
 # node scripts/optimize
 node scripts/make_json
 node --max-old-space-size=4096 ./node_modules/rollup/dist/bin/rollup -c
-npx tsc ./lib/index --outDir ./dist --downlevelIteration --emitDeclarationOnly --declaration --resolveJsonModule --allowSyntheticDefaultImports
+npx tsc ./lib/index \
+    --outDir ./dist \
+    --downlevelIteration \
+    --emitDeclarationOnly \
+    --declaration \
+    --resolveJsonModule \
+    --allowSyntheticDefaultImports
 
 #-s ASSERTIONS=1 \
