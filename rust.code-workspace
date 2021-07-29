@@ -1,0 +1,48 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+    "eslint.enable": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    },
+    "editor.fontFamily": "Source Code Pro",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 24,
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": true,
+    "editor.rulers": [
+      120,
+      240,
+      360
+    ],
+    "files.exclude": {
+      ".editorconfig": true
+    },
+    "git.ignoreLimitWarning": true,
+    "peacock.color": "#279b37",
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#ab307e",
+      "activityBar.activeBorder": "#25320e",
+      "activityBar.background": "#ab307e",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#25320e",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "statusBar.background": "#832561",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#ab307e",
+      "titleBar.activeBackground": "#832561",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#83256199",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    }
+  }
+}
